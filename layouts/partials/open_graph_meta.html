@@ -10,7 +10,7 @@
 <meta property="og:type" content="{{ with .Title }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
-{{ with .Params.images }}
+{{ with .Params.photos }}
     {{ range first 1 . }}
         <meta property="og:image" content="{{ . | absURL }}" />
     {{ end }}
